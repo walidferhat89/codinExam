@@ -1,6 +1,13 @@
 package problems.math;
 
+
 public class Factorial {
+
+
+    public static void main(String[] args) {
+        int result = sum(5);
+        System.out.println(result);
+    }
 
     /*
      *
@@ -9,12 +16,27 @@ public class Factorial {
      * you can use Recursion or Iteration
      *
      */
+    public static int sum(int F) {
+        if (F>0){
+            return F * (sum(F- 1));
+        }
+        else {
+            return 1;
+        }
 
-    public static void main(String[] args) {
+
+
+
+
+}
+}
+
+
+
 
         //run your code here
 
 
-    }
 
-}
+
+

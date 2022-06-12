@@ -1,5 +1,8 @@
 package problems.string;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Anagram {
 
     /*
@@ -15,5 +18,20 @@ public class Anagram {
         //run your code here
 
     }
+ public static ArrayList<String> sameChar(){
+        String[]exemple = new String[]{ "CAT","ACT", "ARMY", "MARY"};
+        ArrayList<String> wordList = new ArrayList();
+     for (int i =0; i<exemple.length;i++) {
+         for (int x = 0; x > exemple[i].length(); x++) {
+         }
+     }
 
+         
+
+
+
+
+
+      return wordList;
+    }
 }

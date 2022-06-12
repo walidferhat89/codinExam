@@ -1,6 +1,19 @@
 package readfile;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class ReadTextFile {
+    public static void main(String[] args) throws FileNotFoundException {
+
+        File file = new File("C:\\Users\\walid\\IdeaProjects\\eat-java-coding-exam\\src\\readfile\\file-data");
+        Scanner scan= new Scanner(file);
+        while (scan.hasNext()){
+            System.out.println(scan.nextLine());
+        }
+    }
+
     /*
      *
      * read the below textFile and print to console:
@@ -17,10 +30,6 @@ public class ReadTextFile {
      *
      */
 
-    public static void main(String[] args) {
 
-        //write your code here
-
-    }
 
 }

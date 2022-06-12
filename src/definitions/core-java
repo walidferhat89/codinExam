@@ -1,79 +1,91 @@
 Please answer the below core-java Questions:
 
 Q. What is programing language?
-A.
+A.programing language is a set of command used to give instructions to computers, it can be interpreted
+into a code which machines can understand.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the jdk components ? define each component?
-A.
+A.1/Java Runtime Env (JRE):environment where java code can be executed and contain pre-set lib.
+  2/java virtual machine(JVM): Interpret byte code into machine code.
+  3/Compiler:compile java file(.java) into an executable file (.exe)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is an IDE?
-A.
+A.Integrated Development env.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the IDEs available in the market to support java?
-A.
+A.inteliJ, ECLIPS, VISUAL STUDIO.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain the entire java life cycle.
-A.
-
+A. (.java source code) [compile]>>>>> (.class bytecode): at compile time.
+   (.class bytecode) [jit compiler]>>>>>(native machine code): at run time.
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is class?
-A.
+A.class is a blueprint for creating object.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is object?
-A.
+A.is an instance of a class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the entry point of an application?
-A.
+A.public static void main(String[] args)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Why main method is static?
-A.
-
+A.it belongs to the class.(it can be accessed without creating an object)
 ------------------------------------------------------------------------------------------------------------------------
 Q. Which class is the superclass of all classes in java?
-A.
+A. object class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is difference between path and classpath variables?
+
 A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between an Interface and Abstract class?
-A.
+A.-abstract class is hybrid, it can use abstract and non-abstract methods.
+  -interface class use abstract method, and has to be implemented by another class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can you make an Object from an Interface and Abstract class ? how do you use interface and abstract class?
-A.
+A.No, must be inherited by another class, using the keyword extends for abstract and implements for interface
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Access Specifier?
-A.
+A.access modifier is a keyword that set the accessibility of classes,methods, or variables.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is OOP ? Define each feature of java OOP.
-A.
+A.Object Oriented Programing.
+    -encapsulation: using the data hidden within the class in another class
+      wrapped in (setter &getter) method without allowing open access to it.
+    -abstraction: road map without implementation)
+    -inheritance: super-class can share some properties with the sub-class.
+    -polymorphism: -overloading (same methode type and name with different parameters)
+                   -overriding (//    //      //   //   //  and parameters with different body)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Java Package and which package is imported by default?
-A.
+A.-A file directory we use to group related classes.
+  -java.lang package is imported by default.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is API? Name list of API that you have used so far.
-A.
+A.application programing interface
+  -command line
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Does java support multiple inheritance?
-A.
+A.No, multiple inheritance is not allowed in java.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is method overloading and when it happens?
-A.
+A.same methode type and name with different parameters [happened during compile time]
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain exceptions in java and how to handle it?
@@ -85,7 +97,10 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final and how it has been used variables, methods and classes?
-A.
+A.final is keyword that
+    1/prevent a class from being inherited.
+    2/the variable cannot be resigned.
+    3/methods cannot be override.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final, finally and finalize?
@@ -93,51 +108,52 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is a constructor ?
-A.
+A.special method to initials objects.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can we have multiple constructors in a class?
-A.
+A.yes
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. If we don't have a constructor declared, what is called during the object creation?
-A.
+A. a default constructor
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "this" keyword in java ?
-A.
+A."this" referring to the global variable.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "super" keyword in java? How to use it?
-A.
+A.a keyword that's referring to a super-class from a sub-class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JVM stand for?
-A.
+A.java virtual machine.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Is JVM platform independent?
-A.
+A.yes but also it depends on the OS.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What version of java are you using?
-A.
+A.java version "11.0.15"
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JAR stand for?
-A.
+A.java archive.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JDK and JVM?
-A.
+A.JVM only runs java code(allows java programme to run) however JDK is a complete developing tool that contain JRE JVM AND A COMPILER.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JVM and JRE?
-A.
+A.JRE is an environment where to implement java, whereas JVM is the virtual machine that run java programs
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is compile time and run time?
-A.
+A.-compile time is when the code is converted into machine code
+  -run time comes after compile time, its when the executable code is running.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between String, StringBuffer and StringBuilder?
@@ -149,24 +165,25 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between while and do..while loop?
-A.
+A.-while loop check the conditions then execute.
+  -do.while loop execute the body then check the conditions.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Enum?
-A.
+A. special class to enumerate data.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Iterator?
-A.
+A.is used to loop throw Array and hashset.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Which one will take more memory, an int or Integer?
-A.
+A.Integer(Wrapper class)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JIT stands for?
-A.
+A.just in time compiler.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Recursion?
-A.
+A. its a technique that makes a methode call itself.

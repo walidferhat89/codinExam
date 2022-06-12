@@ -12,8 +12,27 @@ public class Pattern {
      */
 
     public static void main(String[] args) {
+          for (int i = 90; i <= 100; i++) {
+            System.out.println(i);
+            //write your code here
 
-        //write your code here
+        }
+
+
+        for (int i=69;i<89;i++){
+            if(i%2==0) {
+                System.out.println(i);
+            }
+        }
+        for (int i=40;i<68;i=i+3){
+
+                System.out.println(i);
+        }
+
+        for (int i = 0; i < 37; i = i + 4) {
+
+            System.out.println(i);
+        }
 
     }
-}
+    }
