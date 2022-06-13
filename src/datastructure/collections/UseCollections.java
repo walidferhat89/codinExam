@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UseCollections {
+    int[] array1 = {1, 3, 2, 4, 8, 9, 0};
+    int[] array2 = {1, 3, 7, 5, 4, 0, 7, 5};
 
     /*
      *

@@ -14,17 +14,22 @@ public class Anagram {
      */
 
     public static void main(String[] args) {
-
+sameChar();
         //run your code here
 
     }
  public static ArrayList<String> sameChar(){
-        String[]exemple = new String[]{ "CAT","ACT", "ARMY", "MARY"};
         ArrayList<String> wordList = new ArrayList();
+        String[]exemple = new String[]{ "CAT","ACT", "ARMY", "MARY"};
+     System.out.println(wordList);
+
+
+
      for (int i =0; i<exemple.length;i++) {
-         for (int x = 0; x > exemple[i].length(); x++) {
+         for (int x = 0; x > wordList.size(); x++) {
          }
      }
+
 
          
 

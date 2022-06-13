@@ -63,8 +63,8 @@ A.access modifier is a keyword that set the accessibility of classes,methods, or
 Q. What is OOP ? Define each feature of java OOP.
 A.Object Oriented Programing.
     -encapsulation: using the data hidden within the class in another class
-      wrapped in (setter &getter) method without allowing open access to it.
-    -abstraction: road map without implementation)
+      wrapped in (setter &getter) method without allowing open access to it.(data hiding)
+    -abstraction: road map without implementation(implementation hiding)
     -inheritance: super-class can share some properties with the sub-class.
     -polymorphism: -overloading (same methode type and name with different parameters)
                    -overriding (//    //      //   //   //  and parameters with different body)
@@ -93,7 +93,7 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is static keyword in java? How it has been used in variables, methods and classes?
-A.
+A.static is a modifier that give you access to a class without creating an object.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final and how it has been used variables, methods and classes?
@@ -161,7 +161,7 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Singleton class?
-A.
+A. object hiding.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between while and do..while loop?

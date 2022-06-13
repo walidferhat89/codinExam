@@ -1,5 +1,8 @@
 package datastructure.collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UseArrayList {
 
     /*
@@ -10,6 +13,17 @@ public class UseArrayList {
      */
 
     public static void main(String[] args) {
+        List<Integer> arraylist = new ArrayList<>();
+        arraylist.add(2);
+        arraylist.add(4);
+        arraylist.add(8);
+        arraylist.add(32);
+        System.out.println(arraylist);
+        arraylist.remove(0);
+        System.out.println(arraylist);
+        arraylist.add(3,256);
+        arraylist.set(1,25);
+        System.out.println(arraylist);
 
         //write your code here
 
