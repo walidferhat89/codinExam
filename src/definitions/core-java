@@ -77,7 +77,8 @@ A.-A file directory we use to group related classes.
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is API? Name list of API that you have used so far.
 A.application programing interface
-  -command line
+  -google map
+  -facebook
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Does java support multiple inheritance?
@@ -89,7 +90,8 @@ A.same methode type and name with different parameters [happened during compile 
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain exceptions in java and how to handle it?
-A.
+A.-mechanism to handle runtime errors in java(IO exeption,notsuchelementsfound exeption,server exeption...)
+  -it can be handle by try and catch block.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is static keyword in java? How it has been used in variables, methods and classes?
@@ -105,7 +107,9 @@ A.final is keyword that
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final, finally and finalize?
 A.
-
+-final: is key word that prevent methods,classes and variables from being change.
+-finally: used after try and catch exceptions handling.
+-finalize: called by the garbage collector when there are no more references to the object
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is a constructor ?
 A.special method to initials objects.
@@ -125,6 +129,7 @@ A."this" referring to the global variable.
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "super" keyword in java? How to use it?
 A.a keyword that's referring to a super-class from a sub-class.
+    we can use it during overloading methode to refer to the super-class meth.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JVM stand for?
@@ -144,7 +149,8 @@ A.java archive.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JDK and JVM?
-A.JVM only runs java code(allows java programme to run) however JDK is a complete developing tool that contain JRE JVM AND A COMPILER.
+A.JVM only runs java code(allows java programme to run) however JDK is a complete developing tool that contain JRE JVM
+AND A COMPILER.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JVM and JRE?
@@ -161,7 +167,7 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Singleton class?
-A. object hiding.
+A. singletone is a pattern for a class to make sure only one object is created.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between while and do..while loop?

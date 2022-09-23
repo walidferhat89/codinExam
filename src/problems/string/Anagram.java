@@ -1,6 +1,6 @@
 package problems.string;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 
 public class Anagram {
@@ -14,29 +14,32 @@ public class Anagram {
      */
 
     public static void main(String[] args) {
-sameChar();
+        isAnagram("CAT","ACT" );
+        isAnagram("ARMY" ,"MARY");
+        isAnagram("Java","Python");
+
         //run your code here
 
     }
- public static ArrayList<String> sameChar(){
-        ArrayList<String> wordList = new ArrayList();
-        String[]exemple = new String[]{ "CAT","ACT", "ARMY", "MARY"};
-     System.out.println(wordList);
+
+    public static boolean isAnagram(String str1, String str2) {
 
 
 
-     for (int i =0; i<exemple.length;i++) {
-         for (int x = 0; x > wordList.size(); x++) {
-         }
-     }
+        if (str1.length() != str2.length()) {
+            System.out.println(str1+" and "+str2+" are not anagram");
+            return false;
+        }
+        else{
+            char[]strArray1 = str1.toCharArray();
+            char[]strArray2=str2.toCharArray();
+            Arrays.sort(strArray1);
+            Arrays.sort(strArray2);
+            System.out.println(str1+" and "+str2+" are anagram.");
+            return Arrays.equals(strArray1,strArray2);
+
+        }
 
 
-         
-
-
-
-
-
-      return wordList;
     }
 }

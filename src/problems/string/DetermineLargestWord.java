@@ -1,7 +1,6 @@
 package problems.string;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 
 public class DetermineLargestWord {
 
@@ -13,28 +12,45 @@ public class DetermineLargestWord {
      */
 
     public static void main(String[] args) {
-   words();
 
-
-    }
-    public static  String words() {
+        String longestWord = "";
         String str = "Human brain is a biological learning machine";
-        String words[] = str.split(" ");
-
+        String[] words = str.split(" ");
+        /*for (String elm : words) {
+            System.out.println(words);
+        }*/
+        int lnghtOfLongest=0;
         for (int i = 0; i < words.length; i++) {
-            String longestWord = "";
-            int count = 0;
-            int word = words[0].length();
-            if (words[i].length() > word) {
-                words[i] = longestWord;
-                count = i;
-                count++;
-            }
-            else return longestWord;
+            if (lnghtOfLongest<words[i].length()){
+                lnghtOfLongest=words[i].length();
+                longestWord=words[i];
+                lnghtOfLongest++;
 
-        } return null;
+            }
+        }
+       /* for (String word : words)
+            if (lnghtOfLongest < word.length()) {
+                lnghtOfLongest = word.length();
+                longestWord = word;
+                lnghtOfLongest++;
+            }*/
+        System.out.println("the longest word is: " + longestWord);
+        System.out.println("the length of the longest word is : " + longestWord.length());
+
+
+
+        }
+
+
+
+
+
+
     }
-}
+
+
+
+
 
 
 

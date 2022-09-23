@@ -1,6 +1,7 @@
 package datastructure.collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class UseArrayList {
@@ -24,8 +25,22 @@ public class UseArrayList {
         arraylist.add(3,256);
         arraylist.set(1,25);
         System.out.println(arraylist);
+        arraylist.iterator();
+        Iterator E =arraylist.iterator();
+        while (E.hasNext()){
+            System.out.println(E.next());
+        }
+        for (int i = 0; i <arraylist.size() ; i++) {
+            System.out.println(i);
+        }
+        for (int element:arraylist) {
+            System.out.println(element);
+
+        }
+            }
+        }
 
         //write your code here
 
-    }
-}
+
+

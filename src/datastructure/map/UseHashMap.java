@@ -24,7 +24,16 @@ public class UseHashMap {
         map.put(6, "Seattle");
 
         //write your code here
+        for (Map.Entry<Integer,String> mapEntries: map.entrySet()){
+            System.out.println("City N " + mapEntries.getKey() + " : " + mapEntries.getValue());
+        }
+        System.out.println("City N'3 is : " + map.get(3));
+
+
+
+            
+        }
 
 
     }
-}
+

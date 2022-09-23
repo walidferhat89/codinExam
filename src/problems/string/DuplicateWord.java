@@ -1,6 +1,12 @@
 package problems.string;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class DuplicateWord {
+    public static void main(String[] args) {
+        duplicated();
+    }
 
     /*
      *
@@ -9,23 +15,27 @@ public class DuplicateWord {
      *
      */
 
-    public static void main(String[] args) {
+    public static void duplicated () {
 
-        String str = "Java is a programming Language. Java is also an Island of Indonesia. Java is widely used language, Java is also coffee";
-        String words[] = str.split(" ");
-        int count=0;
+        String str = "Java is a programming Language . Java is also an Island of Indonesia. Java is widely used language ," +
+                " Java is also coffee.";
+
+        String[] words = str.split(" ");
+
+        Set<String>duplicate= new HashSet<>();
         for (int i = 0;i< words.length;i++){
-            count=1;
+
             for (int j=i+1;j< words.length;j++){
-                if (words[i].equals(words[j])){
-                    count++;
-                    System.out.println(words[0]);
+                if (words[i].equalsIgnoreCase(words[j])){
+                    duplicate.add(words[i]);
+
+
                 }
             }
-        }
+
+        }System.out.println(duplicate);
 
         //run your code her
-
 
     }
 

@@ -1,14 +1,17 @@
 package readfile;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.Reader;
 import java.util.Scanner;
 
 public class ReadTextFile {
     public static void main(String[] args) throws FileNotFoundException {
 
         File file = new File("C:\\Users\\walid\\IdeaProjects\\eat-java-coding-exam\\src\\readfile\\file-data");
-        Scanner scan= new Scanner(file);
+        Scanner scan = new Scanner(file);
+
         while (scan.hasNext()){
             System.out.println(scan.nextLine());
         }
